@@ -18,3 +18,36 @@ It contains:
 - Source IP
 - Destination IP
 - Data
+
+
+# Day 2 - Protocols and Ports
+
+## TCP vs UDP
+
+### TCP
+- Reliable communication
+- Ensures data delivery
+- Used in web browsing
+
+### UDP
+- Faster but unreliable
+- No guarantee of delivery
+- Used in streaming and gaming
+
+## Ports
+
+Ports help identify specific services on a device.
+
+Examples:
+- 80 → HTTP
+- 443 → HTTPS
+- 53 → DNS
+
+## Protocol
+
+A protocol is a set of rules for communication.
+
+Examples:
+- TCP
+- UDP
+- HTTP
