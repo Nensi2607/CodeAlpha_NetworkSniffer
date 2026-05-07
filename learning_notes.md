@@ -51,3 +51,30 @@ Examples:
 - TCP
 - UDP
 - HTTP
+
+
+# Day 3 - Packet Sniffing and Scapy
+
+## What is Packet Sniffing
+Packet sniffing is the process of capturing and analyzing network packets traveling through a network.
+
+It is used for:
+- Network monitoring
+- Security analysis
+- Troubleshooting
+
+## Information Captured
+A packet sniffer can capture:
+- Source IP
+- Destination IP
+- Protocol
+- Ports
+- Payload data
+
+## What is Scapy
+Scapy is a Python library used for packet manipulation and network analysis.
+
+It helps in:
+- Capturing packets
+- Analyzing packets
+- Creating custom packets
