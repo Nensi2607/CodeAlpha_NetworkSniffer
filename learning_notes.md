@@ -78,3 +78,20 @@ It helps in:
 - Capturing packets
 - Analyzing packets
 - Creating custom packets
+
+
+# Day 5 - Extracting Packet Information
+
+## New Concepts Learned
+- Accessing packet layers
+- Extracting source and destination IP addresses
+- Identifying protocol numbers
+
+## Important Functions
+- packet.haslayer(IP)
+- packet[IP].src
+- packet[IP].dst
+- packet[IP].proto
+
+## Result
+Successfully extracted IP and protocol information from captured packets.
