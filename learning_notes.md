@@ -95,3 +95,22 @@ It helps in:
 
 ## Result
 Successfully extracted IP and protocol information from captured packets.
+
+
+# Day 6 - Protocol Detection and Packet Counter
+
+## New Features Added
+- Packet counter
+- Protocol name detection
+
+## Protocol Numbers
+- 6  → TCP
+- 17 → UDP
+- 1  → ICMP
+
+## Concepts Learned
+- Using conditional statements for protocol identification
+- Tracking packet count using variables
+
+## Result
+Successfully displayed protocol names instead of protocol numbers.
