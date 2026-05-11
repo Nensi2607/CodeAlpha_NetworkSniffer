@@ -31,4 +31,4 @@ def packet_callback(packet):
         print(f"Destination IP  : {destination_ip}")
         print(f"Protocol        : {protocol_name}")
 
-sniff(prn=packet_callback, store=False)
+sniff(prn=packet_callback, filter="tcp", count=10)

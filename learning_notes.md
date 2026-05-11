@@ -114,3 +114,23 @@ Successfully extracted IP and protocol information from captured packets.
 
 ## Result
 Successfully displayed protocol names instead of protocol numbers.
+
+
+# Day 7 - Packet Filtering
+
+## What is Packet Filtering
+Packet filtering allows capturing only specific types of network traffic.
+
+## TCP Filter
+Used:
+filter="tcp"
+
+This captures only TCP packets.
+
+## Concepts Learned
+- Filtering packets
+- Capturing specific protocols
+- Understanding targeted traffic analysis
+
+## Result
+Successfully captured only TCP traffic packets.
