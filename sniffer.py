@@ -13,6 +13,7 @@ def packet_callback(packet):
         source_ip = packet[IP].src
         destination_ip = packet[IP].dst
         protocol_num = packet[IP].proto
+        packet_size = len(packet)
 
         protocol_name = "OTHER"
 
@@ -25,10 +26,16 @@ def packet_callback(packet):
         elif protocol_num == 1:
             protocol_name = "ICMP"
 
-        print("\n==============================")
+        print("\n====================================")
+        print("       NETWORK PACKET DETAILS       ")
+        print("====================================")
+
         print(f"Packet Number   : {packet_count}")
         print(f"Source IP       : {source_ip}")
         print(f"Destination IP  : {destination_ip}")
         print(f"Protocol        : {protocol_name}")
+        print(f"Packet Size     : {packet_size} bytes")
+
+        print("====================================")
 
 sniff(prn=packet_callback, filter="tcp", count=10)

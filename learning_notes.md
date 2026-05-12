@@ -134,3 +134,24 @@ This captures only TCP packets.
 
 ## Result
 Successfully captured only TCP traffic packets.
+
+
+# Day 8 - Output Formatting and Packet Size
+
+## New Features Added
+- Improved terminal formatting
+- Packet size display
+
+## Packet Size
+Packet size represents the amount of data inside a packet.
+
+Used:
+len(packet)
+
+## Concepts Learned
+- Better output presentation
+- Measuring packet size
+- Improving readability of packet analysis
+
+## Result
+Successfully displayed formatted packet information with packet size.
