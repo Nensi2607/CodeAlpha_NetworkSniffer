@@ -155,3 +155,16 @@ len(packet)
 
 ## Result
 Successfully displayed formatted packet information with packet size.
+
+# Day 10 - Packet Logging
+
+## New Feature Added
+- Saving captured packet details into a log file
+
+## Concepts Learned
+- File handling in Python
+- Writing logs to files
+- Real-world packet logging
+
+## Result
+Successfully stored packet analysis results in packet_logs.txt

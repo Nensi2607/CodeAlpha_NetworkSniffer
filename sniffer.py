@@ -3,6 +3,8 @@ from scapy.layers.inet import IP
 
 packet_count = 0
 
+log_file = open("packet_logs.txt", "a")
+
 def packet_callback(packet):
 
     global packet_count
@@ -26,16 +28,21 @@ def packet_callback(packet):
         elif protocol_num == 1:
             protocol_name = "ICMP"
 
-        print("\n====================================")
-        print("       NETWORK PACKET DETAILS       ")
-        print("====================================")
+        output = f"""
+====================================
+Packet Number   : {packet_count}
+Source IP       : {source_ip}
+Destination IP  : {destination_ip}
+Protocol        : {protocol_name}
+Packet Size     : {packet_size} bytes
+====================================
+"""
 
-        print(f"Packet Number   : {packet_count}")
-        print(f"Source IP       : {source_ip}")
-        print(f"Destination IP  : {destination_ip}")
-        print(f"Protocol        : {protocol_name}")
-        print(f"Packet Size     : {packet_size} bytes")
+        print(output)
 
-        print("====================================")
+        log_file.write(output)
+        log_file.flush()
 
 sniff(prn=packet_callback, filter="tcp", count=10)
+
+log_file.close()

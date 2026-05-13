@@ -15,6 +15,7 @@ The Network Sniffer captures and analyzes live network packets using Python and 
 - TCP packet filtering
 - Display packet size
 - Clean formatted output
+- Save packet logs to file
 
 ---
 
@@ -54,20 +55,6 @@ python sniffer.py
 
 ---
 
-## 📸 Output Screenshot
-
-(Add your screenshot here)
-
----
-
-## 🎯 Future Improvements
-- Save logs to file
-- GUI version
-- Advanced filtering
-- Real-time statistics
-
----
-
 ## 👨‍💻 Author
 Nensi Shingala
 
@@ -88,3 +75,11 @@ Nensi Shingala
 
 ### Day 8 - Formatted Output
 ![Day 8 Formatted Output](screenshots/day8_formatted_output.png)
+
+## 🎯 Future Improvements
+- Save logs to file
+- GUI version
+- Advanced filtering
+- Real-time statistics
+
+---
